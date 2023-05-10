@@ -27,11 +27,13 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Servmen" element={<Servmen />} />
-            <Route path="/Servmen/Carpenter" element={<Servmen />} />
-            <Route path="/Servmen/Cleaner" element={<Servmen />} />
+            <Route path="/Servmen/carpenter" element={<Servmen />} />
+            <Route path="/Servmen/cleaner" element={<Servmen />} />
             <Route path="/Servmen/plumber" element={<Servmen />} />
-            <Route path="/Servmen" element={<Servmen />} />
-            <Route path="/Servmen" element={<Servmen />} />
+            <Route path="/Servmen/electrician" element={<Servmen />} />
+            <Route path="/Servmen/barber" element={<Servmen />} />
+            <Route path="/Servmen/painting" element={<Servmen />} />
+            <Route path="/Servmen/Pest Control" element={<Servmen />} />
           </Routes>
         </div>
       </Router>

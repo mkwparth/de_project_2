@@ -5,6 +5,9 @@ import p from "../images/painter.png"
 import p1 from "../images/plumber.png"
 import e1 from "../images/electric.png"
 import p2 from "../images/pestcontrol.png"
+import p3 from "../images/barber.png"
+import p4 from "../images/vacuum.png"
+
 import Seravai from "../Seravai";
 import NavBar from "../NavBar";
 import './home.css'
@@ -23,10 +26,10 @@ export const Home = () => {
           <div className="col-sm-4"><Card imgN={p} name="Painting"/></div>
           <div className="col-sm-4"><Card imgN={p1} name="Plumber"/></div>
           <div className="col-sm-4"><Card imgN={p2} name="Pest Control"/></div>
-          <div className="col-sm-4"><Card imgN={p1} name="cleaner"/></div>
-          <div className="col-sm-4"><Card imgN={p1} name="Plumbing"/></div>
-          <div className="col-sm-4"><Card imgN={p1} name="Plumbing"/></div>
-          <div className="col-sm-4"><Card imgN={p1} name="Plumbing"/></div>
+          <div className="col-sm-4"><Card imgN={p4} name="Cleaner"/></div>
+          <div className="col-sm-4"><Card imgN={p3} name="barber"/></div>
+          {/* <div className="col-sm-4"><Card imgN={p1} name="Plumbing"/></div> */}
+          {/* <div className="col-sm-4"><Card imgN={p1} name="Plumbing"/></div> */}
         </div>
       </div>
     </>

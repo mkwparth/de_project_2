@@ -18,6 +18,7 @@ import { Formik, Form, ErrorMessage, useField } from 'formik';
 import * as Yup from 'yup';
 import Textfeild from './Textfeild';
 import axios from 'axios';
+import './login.css'
 
 
 
@@ -92,7 +93,9 @@ const theme = createTheme();
 
   }
   return (
+    <div>
 
+   
     <Formik
       initialValues={{
         mobileno: '',
@@ -103,15 +106,10 @@ const theme = createTheme();
     >{
 
         formik => (
-
-          // {console.log("")}
-
-
-          <Form>
-
-            <ThemeProvider theme={theme}>
-              <Container sx={{ width: '500px' }}>
-                <CssBaseline />
+          <Form > 
+            <ThemeProvider theme={theme} sx={{backgroundColor:'#b5fac7'}}>
+               
+                {/* <CssBaseline /> */}
                 <Box
                   sx={{
                     marginTop: 8,
@@ -121,7 +119,7 @@ const theme = createTheme();
 
                   }}
                 >
-                  <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+                  <Avatar sx={{ m: 1, bgcolor: 'success.main' }}>
                     {/* <LockOutlinedIcon /> */}
                   </Avatar>
 
@@ -139,7 +137,7 @@ const theme = createTheme();
                     <div id='errorMessage' style={{color:'red',fontSize:'12px'}}></div>
 
 
-                    <button className="btn btn-primary mt-3 mb-3" type='submit'>Log
+                    <button className="btn btn-success mt-3 mb-3" type='submit'>Log
                       in</button>
 
 
@@ -148,11 +146,11 @@ const theme = createTheme();
 
                       <div>
 
-                        <NavLink to="#" style={{ fontSize: '14px' }} >Forget Password?</NavLink>
+                        <NavLink to="#" style={{ fontSize: '14px' ,color:'#000000' }} >Forget Password?</NavLink>
                       </div>
                       <div>
 
-                        <NavLink to="/register" style={{ fontSize: '14px' }}>Don't Have an Account ? Register</NavLink>
+                        <NavLink to="/register" style={{ fontSize: '14px' ,color:'#000000'}}>Don't Have an Account ? Register</NavLink>
                       </div>
 
                     </div>
@@ -167,13 +165,14 @@ const theme = createTheme();
 
                 </Box>
                 {/* <Copyright sx={{ mt: 8, mb: 4 }} /> */}
-              </Container>
+               
             </ThemeProvider>
 
           </Form>
         )
       }
     </Formik>
+    </div>
 
   );
 }
