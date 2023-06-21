@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Servmen from "./Pages/Servmen";
-// import axios from 'axios';
 
 const Card = (props) => {
   return (

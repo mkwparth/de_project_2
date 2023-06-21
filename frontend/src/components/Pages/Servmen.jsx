@@ -14,9 +14,7 @@ import {useLocation } from 'react-router-dom';
 // location.pathname
 
 
-function createData(Name, calories, fat, carbs, protein) {
-    return { Name, calories, fat, carbs, protein };
-  }
+
 
   
   const Servmen = (props) => {
@@ -24,7 +22,6 @@ function createData(Name, calories, fat, carbs, protein) {
     const location = useLocation()
     let str = location.pathname;
     let serviceType = str.split('/')[2];
-    
     
     const[data,setData] =  useState([]);
     const rows = data;

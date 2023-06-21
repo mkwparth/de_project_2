@@ -1,22 +1,15 @@
-import "./App.css";
-import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact";
-import Seravai from "./components/Seravai";
-import FreeSoloCreateOption from "./components/srchbar_auto";
-import { Stack } from "@mui/material";
+import { Contact } from "./components/Pages/Contact"; 
 import Servmen from "./components/Pages/Servmen";
 import Login from './components/Login'
 import Register from "./components/Register";
 
 function App() {
   return (
-    <>
-
-      {/* <FreeSoloCreateOption /> */}
+    <> 
       <Router>
         <div className="pages mt-0">
           <Routes>
