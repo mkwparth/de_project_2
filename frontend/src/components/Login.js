@@ -37,6 +37,8 @@ function Loqin() {
           body: JSON.stringify(values)
         }); 
         let json = await response.json(); 
+        // console.log(json.user._id);
+        localStorage.setItem('userId', json.user._id);
         let errorMessage = document.getElementById('errorMessage');
         errorMessage.innerHTML = `<p>${json.message}</p>`;
         if (json.status) {

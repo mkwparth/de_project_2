@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-import { AccountCircle, Construction } from "@mui/icons-material"; 
+import { AccountCircle, Construction } from "@mui/icons-material";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -16,7 +16,7 @@ function NavBar() {
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo mb-3">
             LabourLink
-            <Construction sx={{ marginLeft: "10px", fontSize:"30px" }} />
+            <Construction sx={{ marginLeft: "10px", fontSize: "30px" }} />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -66,12 +66,12 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/profile"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                <AccountCircle style={{fontSize:"30px"}}/>
+                <AccountCircle style={{ fontSize: "30px" }} />
               </NavLink>
             </li>
           </ul>

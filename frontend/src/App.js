@@ -2,23 +2,27 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./components/Pages/Home";
 import { About } from "./components/Pages/About";
 import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact"; 
+import {Profile}  from "./components/Pages/Profile"; 
 import Servmen from "./components/Pages/Servmen";
 import Login from './components/Login'
 import Register from "./components/Register";
+import Contact from "./components/Pages/Contact";
 
 function App() {
+  // const navigate = useNavigate('');
+
   return (
     <> 
       <Router>
         <div className="pages mt-0">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={ <Register/> } />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/Servmen" element={<Servmen />} />
             <Route path="/Servmen/carpenter" element={<Servmen />} />
             <Route path="/Servmen/cleaner" element={<Servmen />} />
