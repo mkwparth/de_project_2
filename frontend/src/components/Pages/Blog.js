@@ -1,8 +1,12 @@
 import React from "react";
+import NavBar from "../NavBar";
 
 export const Blog = () => {
   return (
     <>
+      <div className='sticky-top'>
+          <NavBar />
+      </div>
       <div style={{
         display:'flex',
         width:'100vw',
